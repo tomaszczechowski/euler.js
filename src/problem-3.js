@@ -10,17 +10,14 @@ var f =  function(n) {
      * @param {Number} n number
      * @returns {Boolean}
      */
-    function p(n) {var a=1;while(++a<n) if(n%a==0) return false; return true;}
+    function p(n){var a=1;while(++a<n)if(n%a==0)return false;return true;}
     /**
      * Find next prime
      * @param {Number} n Start number
      * @param {Number} m End number
      * @returns {Number}
      */
-    function np(n,m) {
-        a=n;while(++a<=m) if(p(a)) return a; return n;
-    }
-
+    function np(n,m){a=n;while(++a<=m)if(p(a))return a;return n;}
     /**
      * Divide number on prime factors and take the last one
      * @param {Number} n number to divide
@@ -33,8 +30,6 @@ var f =  function(n) {
         }
         return t.reverse()[0];
     }
-
     return s(n);
 };
-
 console.log(f(600851475143));
