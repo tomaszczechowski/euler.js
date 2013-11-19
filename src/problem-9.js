@@ -27,7 +27,7 @@ var f =  function(n) {
      */
     function e(p) {
         t = ['?'];
-        for(a=3;a<p;a++) for(b=4;b<p;b++,c=s(a,b),d(c)&&a+b+c===p ? t=[a,b,c]:'');
+        for(a=3;a<p;a++)for(b=4;b<p;b++,c=s(a,b),d(c)&&a+b+c===p?t=[a,b,c]:'');
         return t.join('+')+'='+ p;
     }
     return e(n);
